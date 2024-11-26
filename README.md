@@ -2,4 +2,4 @@
 A midnight based theme for Discord.
 
 To install this theme, I recommend installing [Vencord](https://vencord.dev/)
-Then go to the settings, find there the item “Themes” and click on the button “Open Themes Folder” and transfer there the two files you downloaded to the folder “themes”
+Then go to settings, find “Themes” there, click on “Open Themes Folder” and transfer the file you downloaded to the “themes” folder there.
