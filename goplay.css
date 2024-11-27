@@ -739,11 +739,16 @@ button.button_dd4f85 /* small buttons */,
 	transform: scale(1.1); /* Увеличение кнопки на 10% */
 }
 
+[class^='winButtonMaximize']:hover {
+	background-color: deepskyblue !important; /* Сильный голубой цвет для кнопки развернуть */
+	transform: scale(1.1); /* Увеличение кнопки на 10% */
+}
+
 [class^='winButtonClose'] {
 	padding-right: calc(var(--spacing) - 5px);
 }
 
-[class^='winButtonMaximize'] {
+[class^='winButtonMinimize'], [class^='winButtonMaximize'] {
 	padding-right: calc(var(--spacing) - 5px);
 }
 
