@@ -717,13 +717,22 @@ button.button_dd4f85 /* small buttons */,
 [class^='winButton'] > svg {
 	display: var(--windows-nav);
 }
+
 [class^='winButton'] {
 	background: none !important;
-	top: 0;
-	width: calc(24px);
+	position: relative; /* Для большей управляемости */
+	width: 24px; /* Убрано избыточное calc */
 	height: calc(var(--spacing) + 12px);
 	margin: 0;
+	cursor: pointer;
+	transition: background-color 0.3s ease, transform 0.2s ease;
 }
+
+[class^='winButton']:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+	transform: scale(1.1);
+}
+
 [class^='winButtonClose'] {
 	padding-right: calc(var(--spacing) - 5px);
 }
