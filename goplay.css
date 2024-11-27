@@ -715,51 +715,18 @@ button.button_dd4f85 /* small buttons */,
 
 /* window controls */
 
-/* Стили для иконок внутри кнопок */
 [class^='winButton'] > svg {
-  display: var(--windows-nav);
-  transition: transform 0.2s ease; /* Плавное изменение размера иконки */
+	display: var(--windows-nav);
 }
-
-/* Основной стиль для всех кнопок */
 [class^='winButton'] {
-  background: none !important; /* Убираем фон */
-  width: 36px;
-  height: 36px;
-  margin: 0;
-  padding: 0;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border: none; /* Убираем обводку */
-  border-radius: 50%; /* Круглые кнопки */
-  transition: transform 0.2s ease; /* Плавное увеличение кнопки */
+	background: none !important;
+	top: 0;
+	width: calc(24px);
+	height: calc(var(--spacing) + 12px);
+	margin: 0;
 }
-
-/* Эффекты при наведении на все кнопки */
-[class^='winButton']:hover {
-  transform: scale(1.1); /* Увеличение на 10% */
-}
-
-/* Эффекты для иконки закрытия при наведении */
-[class^='winButtonClose']:hover > svg {
-  transform: scale(1.1); /* Легкое увеличение иконки */
-}
-
-/* Эффекты для иконки сворачивания при наведении */
-[class^='winButtonMinimize']:hover > svg {
-  transform: scale(1.1); /* Легкое увеличение иконки */
-}
-
-/* Эффекты для иконки развертывания при наведении */
-[class^='winButtonMaximize']:hover > svg {
-  transform: scale(1.1); /* Легкое увеличение иконки */
-}
-
-/* Установка отступов для кнопок */
-[class^='winButtonClose'], [class^='winButtonMinimize'], [class^='winButtonMaximize'] {
-  padding-right: calc(var(--spacing) - 5px);
+[class^='winButtonClose'] {
+	padding-right: calc(var(--spacing) - 5px);
 }
 
 /* custom dm button moon icon */
