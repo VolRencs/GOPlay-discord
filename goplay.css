@@ -716,21 +716,27 @@ button.button_dd4f85 /* small buttons */,
 /* window controls */
 [class^='winButton'] > svg {
 	display: var(--windows-nav);
+	width: 100%; /* Растягиваем иконки по ширине кнопки */
+	height: 100%; /* Растягиваем иконки по высоте кнопки */
+	object-fit: contain; /* Сохраняем пропорции иконок */
 }
 
 [class^='winButton'] {
 	background: none !important;
-	top: 0;
-	width: calc(24px);
+	position: relative;
+	width: 24px;
 	height: calc(var(--spacing) + 12px);
 	margin: 0;
 	cursor: pointer;
 	transition: background-color 0.3s ease, transform 0.2s ease;
+	display: flex; /* Flexbox для центрирования */
+	justify-content: center; /* Центрируем по горизонтали */
+	align-items: center; /* Центрируем по вертикали */
 }
 
 [class^='winButton']:hover {
-	background-color: rgba(255, 255, 255, 0.1); /* Легкий фон при наведении */
-	transform: scale(1.1); /* Небольшое увеличение */
+	background-color: rgba(255, 255, 255, 0.1);
+	transform: scale(1.1);
 }
 
 [class^='winButtonClose'] {
