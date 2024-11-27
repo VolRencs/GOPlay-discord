@@ -714,6 +714,7 @@ button.button_dd4f85 /* small buttons */,
 }
 
 /* window controls */
+
 [class^='winButton'] > svg {
 	display: var(--windows-nav);
 }
@@ -725,16 +726,18 @@ button.button_dd4f85 /* small buttons */,
 	height: calc(var(--spacing) + 12px);
 	margin: 0;
 	cursor: pointer;
-	transition: background-color 0.3s ease; /* Плавное изменение цвета */
+	transition: background-color 0.3s ease, transform 0.2s ease; /* Плавное изменение фона и масштаба */
 }
 
 [class^='winButtonClose']:hover {
-	background-color: red !important; /* Обязательно добавим !important, чтобы переопределить другие стили */
+	background-color: darkred !important; /* Сильный красный при наведении */
+	transform: scale(1.15); /* Немного увеличиваем кнопку */
 }
 
 [class^='winButtonMaximize']:hover,
 [class^='winButtonMinimize']:hover {
-	background-color: lightblue !important; /* Точно так же добавляем !important для переопределения */
+	background-color: deepskyblue !important; /* Сильный голубой цвет */
+	transform: scale(1.15); /* Немного увеличиваем кнопку */
 }
 
 [class^='winButtonClose'] {
