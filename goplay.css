@@ -737,21 +737,6 @@ button.button_dd4f85 /* small buttons */,
   transition: transform 0.2s ease; /* Плавное увеличение кнопки */
 }
 
-/* Цвет иконки по умолчанию для кнопки закрытия */
-[class^='winButtonClose'] > svg {
-  fill: #d13b3b; /* Красный цвет для иконки закрытия */
-}
-
-/* Цвет иконки по умолчанию для кнопки сворачивания */
-[class^='winButtonMinimize'] > svg {
-  fill: #868686; /* Серый цвет для иконки сворачивания */
-}
-
-/* Цвет иконки по умолчанию для кнопки развертывания */
-[class^='winButtonMaximize'] > svg {
-  fill: #4e89c6; /* Голубой цвет для иконки развертывания */
-}
-
 /* Эффекты при наведении на все кнопки */
 [class^='winButton']:hover {
   transform: scale(1.1); /* Увеличение на 10% */
@@ -775,12 +760,6 @@ button.button_dd4f85 /* small buttons */,
 /* Установка отступов для кнопок */
 [class^='winButtonClose'], [class^='winButtonMinimize'], [class^='winButtonMaximize'] {
   padding-right: calc(var(--spacing) - 5px);
-}
-
-/* Исключение фокуса и свечения вокруг кнопки закрытия */
-[class^='winButtonClose']:focus {
-  outline: none; /* Убираем фокус */
-  box-shadow: none; /* Убираем возможное свечение */
 }
 
 /* custom dm button moon icon */
