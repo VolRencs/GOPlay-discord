@@ -721,11 +721,11 @@ button.button_dd4f85 /* small buttons */,
 [class^='winButton'] {
 	background: none !important;
 	top: 0;
-	width: calc(24px);
+	width: 24px; /* Убрано использование calc, чтобы точно задать ширину */
 	height: calc(var(--spacing) + 12px);
 	margin: 0;
 	cursor: pointer;
-	transition: background-color 0.3s ease;
+	transition: background-color 0.3s ease; /* Плавное изменение цвета */
 }
 
 [class^='winButtonClose']:hover {
