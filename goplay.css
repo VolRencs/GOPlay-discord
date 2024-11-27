@@ -731,20 +731,19 @@ button.button_dd4f85 /* small buttons */,
 
 [class^='winButtonClose']:hover {
 	background-color: darkred !important; /* Сильный красный при наведении на кнопку закрытия */
-	transform: scale(1.2); /* Увеличение кнопки на 20% */
+	transform: scale(1.1); /* Увеличение кнопки на 10% */
 }
 
-[class^='winButtonMaximize']:hover,
 [class^='winButtonMinimize']:hover {
 	background-color: deepskyblue !important; /* Сильный голубой цвет */
-	transform: scale(1.2); /* Увеличение кнопки на 20% */
+	transform: scale(1.1); /* Увеличение кнопки на 10% */
 }
 
 [class^='winButtonClose'] {
 	padding-right: calc(var(--spacing) - 5px);
 }
 
-[class^='winButtonMaximize'], [class^='winButtonMinimize'] {
+[class^='winButtonMaximize'] {
 	padding-right: calc(var(--spacing) - 5px);
 }
 
