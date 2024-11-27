@@ -715,7 +715,6 @@ button.button_dd4f85 /* small buttons */,
 
 /* window controls */
 
-/* Стили для иконок внутри кнопок */
 [class^='winButton'] > svg {
   display: var(--windows-nav);
   transition: transform 0.2s ease, fill 0.2s ease; /* Плавное изменение размера и цвета иконки */
@@ -723,13 +722,17 @@ button.button_dd4f85 /* small buttons */,
 
 /* Основной стиль для всех кнопок */
 [class^='winButton'] {
-  background: none !important;
+  background: none !important; /* Убираем фон */
   top: 0;
   width: calc(24px);
   height: calc(var(--spacing) + 12px);
   margin: 0;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease; /* Плавные переходы для масштаба и тени */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none; /* Убираем обводку */
 }
 
 /* Цвет иконки закрытия по умолчанию */
@@ -782,6 +785,7 @@ button.button_dd4f85 /* small buttons */,
 [class^='winButtonClose'], [class^='winButtonMinimize'], [class^='winButtonMaximize'] {
   padding-right: calc(var(--spacing) - 5px);
 }
+
 /* custom dm button moon icon */
 .childWrapper_f90abb > svg:not(.favoriteIcon_dcc7a4) {
 	display: var(--discord-icon);
