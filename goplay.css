@@ -77,7 +77,6 @@
 	/* choose style for window control buttons (minimize-maximize-close) */
 	/* block to show, none to hide; choose only one to show!*/
 	--windows-nav: block; /* default windows-style buttons */
-	--custom-nav: block; /* custom mac-style buttons */
 }
 
 /* change fonts (edit the variables above, not this part) */
@@ -727,28 +726,6 @@ button.button_dd4f85 /* small buttons */,
 }
 [class^='winButtonClose'] {
 	padding-right: calc(var(--spacing) - 5px);
-}
-[class^='winButton']::after {
-	display: var(--custom-nav);
-	content: '';
-	height: 12px;
-	width: 12px;
-	border-radius: 12px;
-}
-[class^='winButton']:hover::after {
-	filter: brightness(0.8);
-}
-[class^='winButton']:active::after {
-	transform: scale(0.9);
-}
-[class^='winButtonClose']::after {
-	background-color: var(--dnd-indicator) !important;
-}
-[class^='winButtonMinMax']:nth-child(3)::after {
-	background-color: var(--online-indicator) !important;
-}
-[class^='winButtonMinMax']:nth-child(4)::after {
-	background-color: var(--idle-indicator) !important;
 }
 
 /* custom dm button moon icon */
