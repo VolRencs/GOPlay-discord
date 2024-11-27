@@ -715,20 +715,73 @@ button.button_dd4f85 /* small buttons */,
 
 /* window controls */
 
+/* Стили для иконок внутри кнопок */
 [class^='winButton'] > svg {
-	display: var(--windows-nav);
-}
-[class^='winButton'] {
-	background: none !important;
-	top: 0;
-	width: calc(24px);
-	height: calc(var(--spacing) + 12px);
-	margin: 0;
-}
-[class^='winButtonClose'] {
-	padding-right: calc(var(--spacing) - 5px);
+  display: var(--windows-nav);
+  transition: transform 0.2s ease, fill 0.2s ease; /* Плавное изменение размера и цвета иконки */
 }
 
+/* Основной стиль для всех кнопок */
+[class^='winButton'] {
+  background: none !important;
+  top: 0;
+  width: calc(24px);
+  height: calc(var(--spacing) + 12px);
+  margin: 0;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Плавные переходы для масштаба и тени */
+}
+
+/* Цвет иконки закрытия по умолчанию */
+[class^='winButtonClose'] > svg {
+  fill: #d13b3b; /* Красный для иконки закрытия */
+}
+
+/* Цвет иконки сворачивания по умолчанию */
+[class^='winButtonMinimize'] > svg {
+  fill: #868686; /* Серый для иконки сворачивания */
+}
+
+/* Цвет иконки развертывания по умолчанию */
+[class^='winButtonMaximize'] > svg {
+  fill: #4e89c6; /* Голубой для иконки развертывания */
+}
+
+/* Эффекты при наведении на все кнопки */
+[class^='winButton']:hover {
+  transform: scale(1.1); /* Увеличение на 10% */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); /* Усиленная тень */
+}
+
+/* Эффект для иконки закрытия при наведении */
+[class^='winButtonClose']:hover > svg {
+  fill: #d13b3b; /* Иконка остается красной */
+  transform: scale(1.1); /* Легкое увеличение иконки */
+  box-shadow: 0 0 8px rgba(209, 59, 59, 0.4); /* Легкая красная тень */
+}
+
+/* Эффект для иконки сворачивания при наведении */
+[class^='winButtonMinimize']:hover > svg {
+  fill: #868686; /* Иконка остается серой */
+  transform: scale(1.1); /* Легкое увеличение иконки */
+}
+
+/* Эффект для иконки развертывания при наведении */
+[class^='winButtonMaximize']:hover > svg {
+  fill: #4e89c6; /* Иконка остается голубой */
+  transform: scale(1.1); /* Легкое увеличение иконки */
+}
+
+/* Активные кнопки (когда нажата) */
+[class^='winButton']:active {
+  background-color: #c7c7c7; /* Еще более темный цвет фона */
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.3); /* Впечатление нажатой кнопки */
+}
+
+/* Установка отступов для кнопок */
+[class^='winButtonClose'], [class^='winButtonMinimize'], [class^='winButtonMaximize'] {
+  padding-right: calc(var(--spacing) - 5px);
+}
 /* custom dm button moon icon */
 .childWrapper_f90abb > svg:not(.favoriteIcon_dcc7a4) {
 	display: var(--discord-icon);
