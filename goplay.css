@@ -725,16 +725,33 @@ button.button_dd4f85 /* small buttons */,
 	height: calc(var(--spacing) + 12px);
 	margin: 0;
 	cursor: pointer;
-	transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+	transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 [class^='winButton']:hover {
-	background-color: rgba(255, 255, 255, 0.1); /* Легкое изменение фона */
-	transform: scale(1.1); /* Увеличение кнопки */
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Легкая тень при наведении */
+	background-color: rgba(255, 255, 255, 0.1); /* Легкое изменение фона при наведении */
+}
+
+[class^='winButtonClose']:active {
+	background-color: red; /* Красный цвет при нажатии на кнопку закрытия */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Легкая тень при нажатии */
+}
+
+[class^='winButtonMaximize']:active {
+	background-color: lightblue; /* Голубой цвет при нажатии на кнопку развернуть */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Легкая тень при нажатии */
+}
+
+[class^='winButtonMinimize']:active {
+	background-color: lightblue; /* Голубой цвет при нажатии на кнопку свернуть */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Легкая тень при нажатии */
 }
 
 [class^='winButtonClose'] {
+	padding-right: calc(var(--spacing) - 5px);
+}
+
+[class^='winButtonMaximize'], [class^='winButtonMinimize'] {
 	padding-right: calc(var(--spacing) - 5px);
 }
 
