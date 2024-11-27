@@ -726,21 +726,21 @@ button.button_dd4f85 /* small buttons */,
 	height: calc(var(--spacing) + 12px);
 	margin: 0;
 	cursor: pointer;
-	transition: background-color 0.3s ease, transform 0.2s ease; /* Плавное изменение фона и масштаба */
+	transition: background-color 0.3s ease, transform 0.2s ease, border 0.3s ease; /* Плавное изменение фона, масштаба и обводки */
 }
 
 [class^='winButtonClose']:hover {
-	background-color: darkred !important; /* Сильный красный при наведении на кнопку закрытия */
+	border: 2px solid darkred !important; /* Красная обводка при наведении на кнопку закрытия */
 	transform: scale(1.1); /* Увеличение кнопки на 10% */
 }
 
 [class^='winButtonMinimize']:hover {
-	background-color: deepskyblue !important; /* Сильный голубой цвет */
+	background-color: deepskyblue !important; /* Голубой цвет для кнопки сворачивания */
 	transform: scale(1.1); /* Увеличение кнопки на 10% */
 }
 
 [class^='winButtonMaximize']:hover {
-	background-color: deepskyblue !important; /* Сильный голубой цвет для кнопки развернуть */
+	background-color: deepskyblue !important; /* Голубой цвет для кнопки развертывания */
 	transform: scale(1.1); /* Увеличение кнопки на 10% */
 }
 
