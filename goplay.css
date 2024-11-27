@@ -777,6 +777,12 @@ button.button_dd4f85 /* small buttons */,
   padding-right: calc(var(--spacing) - 5px);
 }
 
+/* Исключение фокуса и свечения вокруг кнопки закрытия */
+[class^='winButtonClose']:focus {
+  outline: none; /* Убираем фокус */
+  box-shadow: none; /* Убираем возможное свечение */
+}
+
 /* custom dm button moon icon */
 .childWrapper_f90abb > svg:not(.favoriteIcon_dcc7a4) {
 	display: var(--discord-icon);
