@@ -11,3 +11,5 @@ Follow these steps to install the theme:
 3. Open Discord, go to **Settings**, find the **Themes** section in Vencord settings, and click on **Open Themes Folder**.
 4. Move the downloaded file to the **themes** folder.
 5. Enable the theme in the Vencord settings.
+
+![](https://github.com/VolRen-ShYK/GOPlay-discord/blob/Main/Desktop.png)
