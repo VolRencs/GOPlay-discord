@@ -721,7 +721,7 @@ button.button_dd4f85 /* small buttons */,
 [class^='winButton'] {
 	background: none !important;
 	top: 0;
-	width: 24px; /* Убрано использование calc, чтобы точно задать ширину */
+	width: 24px;
 	height: calc(var(--spacing) + 12px);
 	margin: 0;
 	cursor: pointer;
@@ -729,12 +729,12 @@ button.button_dd4f85 /* small buttons */,
 }
 
 [class^='winButtonClose']:hover {
-	background-color: red; /* Красный цвет при наведении на кнопку закрытия */
+	background-color: red !important; /* Обязательно добавим !important, чтобы переопределить другие стили */
 }
 
 [class^='winButtonMaximize']:hover,
 [class^='winButtonMinimize']:hover {
-	background-color: lightblue; /* Голубой цвет при наведении на кнопки развернуть/свернуть */
+	background-color: lightblue !important; /* Точно так же добавляем !important для переопределения */
 }
 
 [class^='winButtonClose'] {
