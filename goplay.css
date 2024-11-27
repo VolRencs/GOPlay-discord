@@ -716,27 +716,22 @@ button.button_dd4f85 /* small buttons */,
 /* window controls */
 [class^='winButton'] > svg {
 	display: var(--windows-nav);
-	width: 50%; /* Иконка будет занимать 50% ширины кнопки */
-	height: 50%; /* Иконка будет занимать 50% высоты кнопки */
-	object-fit: contain; /* Сохраняем пропорции иконок */
 }
 
 [class^='winButton'] {
 	background: none !important;
-	position: relative;
-	width: 24px;
+	top: 0;
+	width: calc(24px);
 	height: calc(var(--spacing) + 12px);
 	margin: 0;
 	cursor: pointer;
-	transition: background-color 0.3s ease, transform 0.2s ease;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
 }
 
 [class^='winButton']:hover {
-	background-color: rgba(255, 255, 255, 0.1); /* Легкое изменение фона при наведении */
-	transform: scale(1.1); /* Увеличиваем кнопку при наведении */
+	background-color: rgba(255, 255, 255, 0.1); /* Легкое изменение фона */
+	transform: scale(1.1); /* Увеличение кнопки */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Легкая тень при наведении */
 }
 
 [class^='winButtonClose'] {
