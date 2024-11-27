@@ -715,41 +715,78 @@ button.button_dd4f85 /* small buttons */,
 
 /* window controls */
 
+/* Стили для иконок внутри кнопок */
 [class^='winButton'] > svg {
-	display: var(--windows-nav);
+  display: var(--windows-nav);
 }
 
+/* Основной стиль для всех кнопок */
 [class^='winButton'] {
-	background: none !important;
-	top: 0;
-	width: 24px;
-	height: calc(var(--spacing) + 12px);
-	margin: 0;
-	cursor: pointer;
-	transition: background-color 0.3s ease, transform 0.2s ease, border 0.3s ease; /* Плавное изменение фона, масштаба и обводки */
+  background-color: #f3f4f6; /* Светлый фон */
+  color: #333; /* Темный цвет текста */
+  border: none;
+  border-radius: 8px; /* Скругленные углы */
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, border 0.3s ease, box-shadow 0.2s ease; /* Плавные переходы */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Легкая тень */
 }
 
-[class^='winButtonClose']:hover {
-	border: 2px solid darkred !important; /* Красная обводка при наведении на кнопку закрытия */
-	transform: scale(1.1); /* Увеличение кнопки на 10% */
+/* Эффекты при наведении на все кнопки */
+[class^='winButton']:hover {
+  background-color: #e1e4e8; /* Немного темнее при наведении */
+  transform: scale(1.1); /* Увеличение на 10% */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); /* Усиленная тень */
 }
 
-[class^='winButtonMinimize']:hover {
-	background-color: deepskyblue !important; /* Голубой цвет для кнопки сворачивания */
-	transform: scale(1.1); /* Увеличение кнопки на 10% */
-}
-
-[class^='winButtonMaximize']:hover {
-	background-color: deepskyblue !important; /* Голубой цвет для кнопки развертывания */
-	transform: scale(1.1); /* Увеличение кнопки на 10% */
-}
-
+/* Эффект для кнопки закрытия */
 [class^='winButtonClose'] {
-	padding-right: calc(var(--spacing) - 5px);
+  color: #d13b3b; /* Красный для кнопки закрытия */
 }
 
-[class^='winButtonMinimize'], [class^='winButtonMaximize'] {
-	padding-right: calc(var(--spacing) - 5px);
+/* Эффект при наведении на кнопку закрытия */
+[class^='winButtonClose']:hover {
+  background-color: #f5d0d0; /* Светлый красный при наведении */
+  border: 2px solid #d13b3b; /* Красная обводка */
+  box-shadow: 0 0 8px rgba(209, 59, 59, 0.4); /* Легкая красная тень */
+}
+
+/* Эффект для кнопки сворачивания */
+[class^='winButtonMinimize'] {
+  color: #868686; /* Серый для кнопки сворачивания */
+}
+
+/* Эффект при наведении на кнопку сворачивания */
+[class^='winButtonMinimize']:hover {
+  background-color: #e1e1e1; /* Светлый серый при наведении */
+  transform: scale(1.1); /* Увеличение на 10% */
+}
+
+/* Эффект для кнопки развертывания */
+[class^='winButtonMaximize'] {
+  color: #4e89c6; /* Голубой для кнопки развертывания */
+}
+
+/* Эффект при наведении на кнопку развертывания */
+[class^='winButtonMaximize']:hover {
+  background-color: #d1e4fa; /* Светлый голубой при наведении */
+  transform: scale(1.1); /* Увеличение на 10% */
+}
+
+/* Активные кнопки (когда нажата) */
+[class^='winButton']:active {
+  background-color: #c7c7c7; /* Еще более темный цвет фона */
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.3); /* Впечатление нажатой кнопки */
+}
+
+/* Установка отступов для кнопок */
+[class^='winButtonClose'], [class^='winButtonMinimize'], [class^='winButtonMaximize'] {
+  padding-right: calc(var(--spacing) - 5px);
 }
 
 /* custom dm button moon icon */
