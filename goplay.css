@@ -716,17 +716,36 @@ button.button_dd4f85 /* small buttons */,
 /* window controls */
 
 [class^='winButton'] > svg {
-	display: var(--windows-nav);
+    display: var(--windows-nav);
 }
+
+/* Стиль для всех кнопок */
 [class^='winButton'] {
-	background: none !important;
-	top: 0;
-	width: calc(24px);
-	height: calc(var(--spacing) + 12px);
-	margin: 0;
+    background: none !important;
+    top: 0;
+    width: calc(24px);
+    height: calc(var(--spacing) + 12px);
+    margin: 0;
 }
+
+/* Стиль для кнопки закрытия */
 [class^='winButtonClose'] {
-	padding-right: calc(var(--spacing) - 5px);
+    padding-right: calc(var(--spacing) - 5px);
+}
+
+/* Стиль для полосочки (кнопка минимизации) */
+[class^='winButtonMinimize'] > svg path {
+    fill: #00BFFF; /* Голубой цвет */
+}
+
+/* Стиль для квадрата (кнопка развертывания) */
+[class^='winButtonMaximize'] > svg path {
+    fill: #00BFFF; /* Голубой цвет */
+}
+
+/* Стиль для крестика (кнопка закрытия) */
+[class^='winButtonClose'] > svg path {
+    fill: #FF6347; /* Красный цвет */
 }
 
 /* custom dm button moon icon */
