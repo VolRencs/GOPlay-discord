@@ -716,6 +716,20 @@ button.button_dd4f85 /* small buttons */,
 
 /* window controls */
 
+/* window controls */
+[class^='winButton'] > svg {
+	display: var(--windows-nav);
+}
+[class^='winButton'] {
+	background: none !important;
+	top: 0;
+	width: calc(24px);
+	height: calc(var(--spacing) + 12px);
+	margin: 0;
+}
+[class^='winButtonClose'] {
+	padding-right: calc(var(--spacing) - 5px);
+}
 [class^='winButton']::after {
 	display: var(--custom-nav);
 	content: '';
