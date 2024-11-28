@@ -976,9 +976,6 @@ button.button_f67531 /* make user panel buttons round */ {
 
 html.theme-light,
 .theme-dark {
-	border-radius: 16px; /* Измените значение для большего или меньшего закругления */
-        overflow: hidden; /* Убираем обрезку содержимого за границами */
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Добавляем тень для красоты */
 	--activity-card-background: var(--bg-3);
 	--android-navigation-bar-background: var(--primary-830);
 	--android-navigation-scrim-background: hsl(var(--primary-830-hsl) / 0.5);
