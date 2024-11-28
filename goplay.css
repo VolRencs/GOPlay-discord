@@ -76,7 +76,7 @@
 
 	/* choose style for window control buttons (minimize-maximize-close) */
 	/* block to show, none to hide; choose only one to show!*/
-	--windows-nav: block; /* default windows-style buttons */
+	--custom-nav: block; /* default windows-style buttons */
 }
 
 /* change fonts (edit the variables above, not this part) */
@@ -716,7 +716,7 @@ button.button_dd4f85 /* small buttons */,
 /* window controls */
 
 [class^='winButton']::after {
-	display: var(--windows-nav);
+	display: var(--custom-nav);
 	content: '';
 	height: 12px;
 	width: 12px;
