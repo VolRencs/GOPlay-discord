@@ -741,22 +741,22 @@ button.button_dd4f85 /* small buttons */,
     transition: transform 0.1s, filter 0.1s; /* Для плавного hover/active */
 }
 
-/* Иконка "Закрыть" */
-[class^='winButtonClose']::after {
-    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23ff5f56" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>');
-    background-color: transparent !important; /* Убираем фон */
+/* Иконка "Свернуть" (слева) */
+[class^='winButtonMinMax']:nth-child(3)::after {
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23ffbd44" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"/></svg>');
+    background-color: transparent !important;
 }
 
-/* Иконка "Свернуть" */
-[class^='winButtonMinMax']:nth-child(3)::after {
+/* Иконка "Развернуть" (в центре) */
+[class^='winButtonMinMax']:nth-child(4)::after {
     background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%2389c23f" stroke-width="2" stroke-linejoin="round"><path d="M6 6h12v12H6z"/></svg>');
     background-color: transparent !important;
 }
 
-/* Иконка "Развернуть" */
-[class^='winButtonMinMax']:nth-child(4)::after {
-    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23ffbd44" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"/></svg>');
-    background-color: transparent !important;
+/* Иконка "Закрыть" (справа) */
+[class^='winButtonClose']::after {
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23ff5f56" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>');
+    background-color: transparent !important; /* Убираем фон */
 }
 
 /* Hover эффекты */
