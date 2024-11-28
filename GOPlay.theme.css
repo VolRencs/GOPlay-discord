@@ -2,7 +2,7 @@
  * @name GOPlay
  * @description Discord theme GOPlay
  * @author VolRen | Senko
- * @version 1.1.0
+ * @version 1.2.0
  * @invite 5CpUtAEhdD
  * @website https://github.com/VolRen-ShYK/GOPlay-discord
  * @source https://github.com/VolRen-ShYK/GOPlay-discord/blob/Main/GOPlay.theme.css
@@ -10,12 +10,13 @@
  * @authorLink https://github.com/VolRen-ShYK
 */
 
-@import url("https://raw.githubusercontent.com/VolRen-ShYK/GOPlay-discord/refs/heads/Main/goplay.css");
-@import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
+@import url('https://volren-shyk.github.io/GOPlay-discord/goplay.css');
+@import url('https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css');
 
-/* customize things here */
+/* General Settings */
 :root {
 	--corner-text: 'GOPlay';
+
 	--divider-thickness: 3px;
 
 	--accent-1: #7caea3; /* links */
@@ -33,9 +34,9 @@
 	--text-4: #e6ededd5; /* icon buttons and channels */
 	--text-5: #d4be9866; /* muted channels/chats and timestamps */
 
-	--online-indicator: #3e92ff;
-	--dnd-indicator: #ff0000;
-	--idle-indicator: #ffa946;
+	--online-indicator: #3e92ff; /* online indicator colour  */
+	--dnd-indicator: #ff0000; /* indicator color do not disturb */
+	--idle-indicator: #ffa946; /* indicator color inactive */
 
 	--bg-1: #9c9c9c38; /* dark buttons when clicked */
 	--bg-2: #2b2b2b; /* dark buttons */
@@ -77,6 +78,7 @@
 	--green-to-accent-3-filter: none; /* add friend page explore icon */
 	--blurple-to-accent-3-filter: none; /* add friend page school icon */
 
+	/* Radial status settings */
 	--rs-small-spacing: 2px; /* Gap between avatar and status for members list/dms | MUST end in px */
 	--rs-medium-spacing: 3px; /* Gap between avatar and status for User popout | MUST end in px */
 	--rs-large-spacing: 4px; /* Gap between avatar and status for User profiles | MUST end in px */
@@ -93,10 +95,4 @@
 	--rs-phone-color: var(--rs-online-color); /* Colour of the ring and phone icon when a user is on their phone |  */
 	--rs-phone-visible: block; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
 	--rs-self-speaking-colour: #6ed6f1;
-}
-/* disable DM spin */
-.wrapper__8436d:hover > .childWrapper_a6ce15::before,
-.wrapper__8436d.selected_ae80f7 > .childWrapper_a6ce15::before {
-	background: var(--text-0);
-	transform: rotate(-0deg) scale(0.8);
 }
