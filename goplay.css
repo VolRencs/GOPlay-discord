@@ -1292,4 +1292,8 @@ html.theme-light,
 	--primary-660: var(--bg-3); /* search popout "enter" bar */
 
 	--white-500: var(--text-1);
+	/* Тест окна */
+	border-radius: 16px; /* Измените значение для большего или меньшего закругления */
+        overflow: hidden; /* Убираем обрезку содержимого за границами */
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Добавляем тень для красоты */
 }
