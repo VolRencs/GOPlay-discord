@@ -743,13 +743,13 @@ button.button_dd4f85 /* small buttons */,
 
 /* Иконка "Свернуть" (слева) */
 [class^='winButtonMinMax']:nth-child(3)::after {
-    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%2389c23f" stroke-width="2" stroke-linejoin="round"><path d="M6 6h12v12H6z"/></svg>');
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%2389c23f" stroke-width="2" stroke-linejoin="round"><path d="M5 12h14"/></svg>');
     background-color: transparent !important;
 }
 
 /* Иконка "Развернуть" (в центре) */
 [class^='winButtonMinMax']:nth-child(4)::after {
-    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23ffbd44" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"/></svg>');
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23ffbd44" stroke-width="2" stroke-linejoin="round"><path d="M6 6h12v12H6z"/></svg>');
     background-color: transparent !important;
 }
 
