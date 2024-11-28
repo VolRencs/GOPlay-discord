@@ -780,9 +780,9 @@ button.button_dd4f85 /* small buttons */,
 	width: 65%;
 	height: 65%;
 	background: var(--text-4);
-	-webkit-mask-image: var(--moon-icon-url);
-	-webkit-mask-size: var(--moon-icon-size);
-	-webkit-mask-repeat: none;
+	mask-image: var(--moon-icon-url);
+	mask-size: var(--moon-icon-size);
+	mask-repeat: none;
 }
 .wrapper_f90abb:hover .childWrapper_f90abb::before {
 	/* prettier-ignore */
