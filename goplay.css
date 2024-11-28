@@ -732,8 +732,8 @@ button.button_dd4f85 /* small buttons */,
 [class^='winButton']::after {
     display: var(--custom-nav); /* Сохраняем вашу переменную */
     content: '';
-    height: 16px; /* Увеличенный размер */
-    width: 16px;  /* Увеличенный размер */
+    height: 20px; /* Увеличенный размер */
+    width: 20px;  /* Увеличенный размер */
     border-radius: 0; /* Убираем закругление */
     background-size: contain; /* Корректируем размер фона */
     background-repeat: no-repeat;
