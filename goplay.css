@@ -76,6 +76,7 @@
 
 	/* choose style for window control buttons (minimize-maximize-close) */
 	/* block to show, none to hide; choose only one to show!*/
+	--windows-nav: none;
 	--custom-nav: block; /* default windows-style buttons */
 }
 
