@@ -147,11 +147,6 @@
 .input_f4e139 /* big 'find conversation' search bar */ {
 	background: var(--bg-2);
 }
-.theme-dark, .theme-light {
-    border-radius: 16px; /* Измените значение для большего или меньшего закругления */
-    overflow: hidden; /* Убираем обрезку содержимого за границами */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Добавляем тень для красоты */
-}
 .chat_a7d72e /* chat + member list */,
 .sidebar_a4d4d9 /* channel sidebar */,
 .privateChannels_f0963d .scroller_c47fa9 /* dms list inner */,
