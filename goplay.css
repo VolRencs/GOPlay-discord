@@ -715,37 +715,76 @@ button.button_dd4f85 /* small buttons */,
 
 /* window controls */
 
+/* Стиль для SVG в кнопках */
 [class^='winButton'] > svg {
-    display: var(--windows-nav);
+  display: var(--windows-nav); /* Скрываем или отображаем SVG в зависимости от переменной */
 }
 
-/* Стиль для всех кнопок */
+/* Основной стиль для кнопок */
 [class^='winButton'] {
-    background: none !important;
-    top: 0;
-    width: calc(24px);
-    height: calc(var(--spacing) + 12px);
-    margin: 0;
+  background: none !important;
+  top: 0;
+  width: calc(24px); /* Ширина кнопки */
+  height: calc(var(--spacing) + 12px); /* Высота кнопки с учетом отступа */
+  margin: 0;
 }
 
 /* Стиль для кнопки закрытия */
 [class^='winButtonClose'] {
-    padding-right: calc(var(--spacing) - 5px);
+  padding-right: calc(var(--spacing) - 5px); /* Отступ справа для кнопки закрытия */
 }
 
-/* Стиль для полосочки (кнопка минимизации) */
-[class^='winButtonMinimize'] > svg path {
-    fill: #00BFFF; /* Голубой цвет */
+/* Стиль для псевдоэлемента кнопок (круглый индикатор) */
+[class^='winButton']::after {
+  content: "";
+  padding: 7px; /* Размер индикатора */
+  border-radius: 50%; /* Круглый индикатор */
+  pointer-events: fill;
+  transition-duration: 200ms; /* Плавное изменение */
 }
 
-/* Стиль для квадрата (кнопка развертывания) */
-[class^='winButtonMaximize'] > svg path {
-    fill: #00BFFF; /* Голубой цвет */
+/* Индикатор для кнопки закрытия */
+[class^='winButtonClose']::after {
+  background-color: var(--close-button-color) !important; /* Цвет для кнопки закрытия */
+  margin-top: 0px;
 }
 
-/* Стиль для крестика (кнопка закрытия) */
-[class^='winButtonClose'] > svg path {
-    fill: #FF6347; /* Красный цвет */
+/* Индикатор для кнопки развертывания */
+[class^='winButtonMinMax']:nth-child(3)::after {
+  background-color: var(--maximize-button-color) !important; /* Цвет для кнопки развертывания */
+  margin-top: 0px;
+}
+
+/* Индикатор для кнопки минимизации */
+[class^='winButtonMinMax']:nth-child(4)::after {
+  background-color: var(--minimize-button-color) !important; /* Цвет для кнопки минимизации */
+  margin-top: 0px;
+}
+
+/* Эффект при наведении на кнопку */
+[class^='winButton']:hover::after {
+  filter: brightness(0.8); /* Темнеет индикатор при наведении */
+}
+
+/* Эффект при нажатии на кнопку */
+[class^='winButton']:active::after {
+  transform: scale(0.9); /* Уменьшение индикатора при нажатии */
+}
+
+/* Стиль для кнопок при наведении */
+[class^='winButton']:hover {
+  background-color: var(--background-teritary); /* Темный фон при наведении */
+}
+
+/* Порядок кнопок в контейнере */
+[class^='winButton']:nth-last-child(1) {
+  order: 2;
+}
+[class^='winButton']:nth-last-child(2) {
+  order: 3;
+}
+[class^='winButton']:nth-last-child(3) {
+  order: 1;
 }
 
 /* custom dm button moon icon */
