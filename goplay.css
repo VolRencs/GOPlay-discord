@@ -946,8 +946,7 @@ padding: 12px 0;
     margin: 0;
 }
 
-/* window controls */
-
+/* Дефолтный стиль кнопок */
 [class^='winButton'] > svg {
     display: var(--windows-nav);
 }
@@ -961,44 +960,43 @@ padding: 12px 0;
 [class^='winButtonClose'] {
     padding-right: calc(var(--spacing) - 5px);
 }
+
+/* Стиль для иконок кнопок */
 [class^='winButton']::after {
-    display: var(--custom-nav); /* Сохраняем вашу переменную */
     content: '';
-    height: 20px; /* Увеличенный размер */
-    width: 20px;  /* Увеличенный размер */
-    border-radius: 0; /* Убираем закругление */
-    background-size: contain; /* Корректируем размер фона */
+    width: 20px;
+    height: 20px;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    transition: transform 0.1s, filter 0.1s; /* Для плавного hover/active */
+    border-radius: 0;
+    display: var(--custom-nav);
+    transition: transform 0.2s ease, filter 0.2s ease;
 }
 
-/* Иконка "Свернуть" (слева) */
+/* Иконка для кнопки "Свернуть" */
 [class^='winButtonMinMax']:nth-child(4)::after {
     background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%2389c23f" stroke-width="2" stroke-linejoin="round"><path d="M5 12h14"/></svg>');
-    background-color: transparent !important;
 }
 
-/* Иконка "Развернуть" (в центре) */
+/* Иконка для кнопки "Развернуть" */
 [class^='winButtonMinMax']:nth-child(3)::after {
     background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23ffbd44" stroke-width="2" stroke-linejoin="round"><path d="M6 6h12v12H6z"/></svg>');
-    background-color: transparent !important;
 }
 
-/* Иконка "Закрыть" (справа) */
+/* Иконка для кнопки "Закрыть" */
 [class^='winButtonClose']::after {
     background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23ff5f56" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>');
-    background-color: transparent !important; /* Убираем фон */
 }
 
-/* Hover эффекты */
+/* Эффекты при наведении */
 [class^='winButton']:hover::after {
-    filter: brightness(0.8); /* Сохраняем эффект hover */
+    filter: brightness(0.8); /* Затемнение при наведении */
 }
 
-/* Active эффекты */
+/* Эффекты при клике */
 [class^='winButton']:active::after {
-    transform: scale(0.9); /* Сохраняем эффект клика */
+    transform: scale(0.9); /* Сжатие при клике */
 }
 
 /* custom dm button moon icon */
