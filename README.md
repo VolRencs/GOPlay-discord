@@ -6,6 +6,10 @@
 
 </div>
 
+> [!IMPORTANT]  
+> Ensure **Dark Mode** is enabled in Discord settings for the theme to apply properly!  
+> *(If you prefer Light Mode, customize the theme color variables accordingly.)*
+
 Follow these steps to install the theme:
 
 # Vencord
