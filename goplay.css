@@ -103,30 +103,29 @@
     --icon-spin-transition: none;
 }
 
-/* изменение цветов */
-#app-mount .container_ee69e0 /* список каналов */
-.privateChannels_f0963d /* список личных сообщений */
-#app-mount .container_b2ca13 /* внутренняя панель пользователя */
-.members_cbd271 /* внутренняя панель участников */
-.member_a31c43 /* участники списка */
-.searchResultsWrap_c2b47d /* результаты поиска */
-.searchHeader_b7c924 /* заголовок результатов поиска */
-.chat_a7d72e.container_f3abf4 /* запросы сообщений */
-#app-mount .panels_a4d4d9 > div /* дочерние панели пользователя */
-.container_adcaac /* панель голосовой связи */
-.sidebarRegionScroller_c25c6d /* левая панель настроек */
-#app-mount .container_f1fd9c /* контейнер для просмотра каналов */
-#app-mount .header_f1fd9c /* заголовок для просмотра каналов */
-#app-mount .container_c2efea /* внутренняя панель для просмотра каналов */
-.chat_a7d72e.background_e85cee /* основное тело серверного гида */
-#app-mount .scrollerContainer_c6b11b /* настройка каналов и ролей */
-.shop_e77fa3 /* магазин */
-.wrapper_d880dc.minimum_d880dc /* частный вызов */
-.container_effbe2, .container__33507 /* строки поиска эмодзи/стикеров */
-.searchBar_b56bbc /* строка поиска выбора GIF */
-#app-mount .uploadModal_f82cc7 /* модальное окно загрузки */
-.uploadModal_f82cc7 .footer_f82cc7 /* нижний колонтитул модального окна */
-.container_a6d69a /* страница форумов */ {
+#app-mount .container_ee69e0 /* список каналов */,
+.privateChannels_f0963d /* список личных сообщений */,
+#app-mount .container_b2ca13 /* внутренняя панель пользователя */,
+.members_cbd271 /* внутренняя панель участников */,
+.member_a31c43 /* участники списка */,
+.searchResultsWrap_c2b47d /* результаты поиска */,
+.searchHeader_b7c924 /* заголовок результатов поиска */,
+.chat_a7d72e.container_f3abf4 /* запросы сообщений */,
+#app-mount .panels_a4d4d9 > div /* дочерние панели пользователя */,
+.container_adcaac /* панель голосовой связи */,
+.sidebarRegionScroller_c25c6d /* левая панель настроек */,
+#app-mount .container_f1fd9c /* контейнер для просмотра каналов */,
+#app-mount .header_f1fd9c /* заголовок для просмотра каналов */,
+#app-mount .container_c2efea /* внутренняя панель для просмотра каналов */,
+.chat_a7d72e.background_e85cee /* основное тело серверного гида */,
+#app-mount .scrollerContainer_c6b11b /* настройка каналов и ролей */,
+.shop_e77fa3 /* магазин */,
+.wrapper_d880dc.minimum_d880dc /* частный вызов */,
+.container_effbe2, .container__33507 /* строки поиска эмодзи/стикеров */,
+.searchBar_b56bbc /* строка поиска выбора GIF */,
+#app-mount .uploadModal_f82cc7 /* модальное окно загрузки */,
+.uploadModal_f82cc7 .footer_f82cc7 /* нижний колонтитул модального окна */,
+.container_a6d69a {/* страница форумов */ 
     background: var(--bg-4);
 }
 
