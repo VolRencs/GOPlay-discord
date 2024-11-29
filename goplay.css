@@ -103,7 +103,10 @@
     --moon-spin-transition: none;
     --icon-spin-transition: none;
 }
-
+.sidebar_c25c6d { /* отдельная настройка цвета для списка в настройках. */
+    background: var(--bg-5);
+    border-radius: var(--roundness-xl); 
+}
 #app-mount .container_ee69e0 /* список каналов */,
 .privateChannels_f0963d /* список личных сообщений */,
 #app-mount .container_b2ca13 /* внутренняя панель пользователя */,
@@ -141,10 +144,6 @@
 .searchBar_e7c031, /* строка поиска настроек */
 .circleIconButton_db6521 { /* кнопки списка серверов */
     background: var(--bg-3);
-}
-.sidebar_c25c6d { /* отдельная настройка цвета для списка в настройках. */
-    background: var(--bg-5);
-    border-radius: var(--roundness-xl); 
 }
 .folderIconWrapper_bc7085[style="background-color: rgba(88, 101, 242, 0.4);"] { /* закрытые папки по умолчанию */
     background: var(--bg-3) !important;
