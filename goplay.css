@@ -54,6 +54,7 @@
     --rs-invisible-color: #747f8d; /* Colour for invisible status - Note: this will only show for your own invisibility */
     --rs-phone-color: var(--rs-online-color); /* Colour of the ring and phone icon when a user is on their phone |  */
     --rs-phone-visible: block; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
+    --rs-self-speaking-colour: #6ed6f1; /* The color of the circle around the avatar when you speak */
 
     /* amount of spacing and padding */
     --spacing: 10px;
