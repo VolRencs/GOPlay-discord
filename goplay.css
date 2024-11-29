@@ -144,7 +144,11 @@
 .circleIconButton_db6521 { /* кнопки списка серверов */
     background: var(--bg-3);
 }
-
+/* отдельная настройка цвета для списка в настройках. */
+.sidebar_c25c6d {
+    background: #20262639;
+    border-radius: 22px; /* Скругление углов на 22 пикселя */
+}
 .folderIconWrapper_bc7085[style="background-color: rgba(88, 101, 242, 0.4);"] { /* закрытые папки по умолчанию */
     background: var(--bg-3) !important;
 }
