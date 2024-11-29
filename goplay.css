@@ -1,105 +1,101 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-/* customize things here */
+/* Настройка основных параметров */
 :root {
-    /* font, change to 'gg sans' for default discord font*/
+    /* шрифт, измените на 'gg sans' для шрифта по умолчанию Discord */
     --font: 'roboto';
 
-    /* top left corner text */
+    /* текст в верхнем левом углу */
     --corner-text: 'GOPlay';
 
-    /* thickness of messages divider */
+    /* толщина разделителя сообщений */
     --divider-thickness: 3px;
 
-    --accent-1: #7caea3; /* links */
-    --accent-2: #98f3fa; /* general unread/mention elements */
-    --accent-3: #6ed6f1; /* accent buttons */
-    --accent-4: #29d9e583; /* accent buttons when hovered */
-    --accent-5: #44d8e38b; /* accent buttons when clicked */
-    --mention: #89f5f51a; /* mentions & mention messages */
-    --mention-hover: #abf7f709; /* mentions & mention messages when hovered */
+    --accent-1: #7caea3; /* ссылки */
+    --accent-2: #98f3fa; /* общие элементы для непрочитанных/упоминаний */
+    --accent-3: #6ed6f1; /* акцентные кнопки */
+    --accent-4: #29d9e583; /* акцентные кнопки при наведении */
+    --accent-5: #44d8e38b; /* акцентные кнопки при клике */
+    --mention: #89f5f51a; /* упоминания и сообщения с упоминаниями */
+    --mention-hover: #abf7f709; /* упоминания и сообщения с упоминаниями при наведении */
 
-    --text-0: var(--bg-4); /* text on colored elements */
-    --text-1: var(--text-2); /* other normally white text */
-    --text-2: #cfe9e9; /* headings and important text */
-    --text-3: #dbfdff; /* normal text */
-    --text-4: #e6ededd5; /* icon buttons and channels */
-    --text-5: #d4be9866; /* muted channels/chats and timestamps */
+    --text-0: var(--bg-4); /* текст на цветных элементах */
+    --text-1: var(--text-2); /* другой обычный текст */
+    --text-2: #cfe9e9; /* заголовки и важный текст */
+    --text-3: #dbfdff; /* нормальный текст */
+    --text-4: #e6ededd5; /* иконки кнопок и каналы */
+    --text-5: #d4be9866; /* беззвучные каналы/чаты и метки времени */
 
-    --online-indicator: #3e92ff; /* online indicator colour  */
-    --dnd-indicator: #ff0000; /* indicator color do not disturb */
-    --idle-indicator: #ffa946; /* indicator color inactive */
+    --online-indicator: #3e92ff; /* цвет индикатора онлайн */
+    --dnd-indicator: #ff0000; /* цвет индикатора не беспокоить */
+    --idle-indicator: #ffa946; /* цвет индикатора неактивности */
 
-    --bg-1: #9c9c9c38; /* dark buttons when clicked */
-    --bg-2: #2b2b2b; /* dark buttons */
-    --bg-3: #44454b; /* spacing, secondary elements */
-    --bg-4: #31313a; /* main background color */
-    --hover: #40404079; /* channels and buttons when hovered */
-    --active: #43474d; /* channels and buttons when clicked or selected */
-    --message-hover: #00000016; /* messages when hovered */
+    --bg-1: #9c9c9c38; /* тёмные кнопки при клике */
+    --bg-2: #2b2b2b; /* тёмные кнопки */
+    --bg-3: #44454b; /* отступы, второстепенные элементы */
+    --bg-4: #31313a; /* основной цвет фона */
+    --hover: #40404079; /* каналы и кнопки при наведении */
+    --active: #43474d; /* каналы и кнопки при клике или выборе */
+    --message-hover: #00000016; /* сообщения при наведении */
 
-    /* Radial status settings */
-    --rs-small-spacing: 2px; /* Gap between avatar and status for members list/dms | MUST end in px */
-    --rs-medium-spacing: 3px; /* Gap between avatar and status for User popout | MUST end in px */
-    --rs-large-spacing: 4px; /* Gap between avatar and status for User profiles | MUST end in px */
-    --rs-small-width: 2px; /* Thickness of status border for members list/dms | MUST end in px */
-    --rs-medium-width: 3px; /* Thickness of status border for User popout | MUST end in px */
-    --rs-large-width: 4px; /* Thickness of status border for User profile | MUST end in px */
-    --rs-avatar-shape: 50%; /* 50% for round - 0% for square */
-    --rs-online-color: #3e92ff; /* Colour for online status */
-    --rs-idle-color: #ffa946; /* Colour for idle status */
-    --rs-dnd-color: #ff0000; /* Colour for dnd status */
-    --rs-offline-color: #636b75; /* Colour for offline status */
-    --rs-streaming-color: #643da7; /* Colour for streaming status */
-    --rs-invisible-color: #747f8d; /* Colour for invisible status - Note: this will only show for your own invisibility */
-    --rs-phone-color: var(--rs-online-color); /* Colour of the ring and phone icon when a user is on their phone |  */
-    --rs-phone-visible: block; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
-    --rs-self-speaking-colour: #6ed6f1; /* The color of the circle around the avatar when you speak */
+    /* настройки радиального статуса */
+    --rs-small-spacing: 2px; /* зазор между аватаром и статусом для списка участников/личных сообщений */
+    --rs-medium-spacing: 3px; /* зазор между аватаром и статусом для всплывающих окон пользователей */
+    --rs-large-spacing: 4px; /* зазор между аватаром и статусом для профилей пользователей */
+    --rs-small-width: 2px; /* толщина рамки статуса для списка участников/личных сообщений */
+    --rs-medium-width: 3px; /* толщина рамки статуса для всплывающих окон пользователей */
+    --rs-large-width: 4px; /* толщина рамки статуса для профилей пользователей */
+    --rs-avatar-shape: 50%; /* 50% для круглых аватаров - 0% для квадратных */
+    --rs-online-color: var(--online-indicator); /* цвет статуса онлайн */
+    --rs-idle-color: var(--idle-indicator); /* цвет статуса неактивности */
+    --rs-dnd-color: var(--dnd-indicator); /* цвет статуса не беспокоить */
+    --rs-self-speaking-colour: var(--accent-3); /* цвет круга вокруг аватара, когда вы говорите */
+    --rs-phone-color: var(--rs-online-color); /* цвет кольца и иконки телефона, когда пользователь на телефоне */
+    --rs-offline-color: #636b75; /* цвет статуса оффлайн */
+    --rs-streaming-color: #643da7; /* цвет статуса стриминга */
+    --rs-invisible-color: #747f8d; /* цвет статуса невидимости */
+    --rs-phone-visible: block; /* видимость иконки телефона рядом с аватаром пользователя */
 
-    /* amount of spacing and padding */
+    /* количество отступов и внутренних отступов */
     --spacing: 10px;
 
-    /* animations */
-    /* ALL ANIMATIONS CAN BE DISABLED WITH REDUCED MOTION IN DISCORD SETTINGS */
-    --list-item-transition: 0.2s ease; /* channels/members/settings hover transition */
-    --unread-bar-transition: 0.2s ease; /* unread bar moving into view transition */
-    --moon-spin-transition: 0.4s ease; /* moon icon spin */
-    --icon-spin-transition: 1s ease; /* round icon button spin (settings, emoji, etc.) */
+    /* анимации */
+    --list-item-transition: 0.2s ease; /* анимация наведения на каналы/участников/настройки */
+    --unread-bar-transition: 0.2s ease; /* анимация появления полосы непрочитанных сообщений */
+    --moon-spin-transition: 0.4s ease; /* анимация вращения иконки луны */
+    --icon-spin-transition: 1s ease; /* анимация вращения круглой иконки кнопок (настройки, эмодзи и т.д.) */
 
-    /* corner roundness (border-radius) */
-    --roundness-xl: 22px; /* roundness of big panel outer corners */
-    --roundness-l: 20px; /* popout panels */
-    --roundness-m: 16px; /* smaller panels, images, embeds */
-    --roundness-s: 12px; /* members, settings inputs */
-    --roundness-xs: 10px; /* channels, buttons */
-    --roundness-xxs: 8px; /* searchbar, small elements */
+    /* скругление углов (border-radius) */
+    --roundness-xl: 22px; /* скругление внешних углов большого панели */
+    --roundness-l: 20px; /* всплывающие панели */
+    --roundness-m: 16px; /* меньшие панели, изображения, встраиваемые элементы */
+    --roundness-s: 12px; /* участники, поля настроек */
+    --roundness-xs: 10px; /* каналы, кнопки */
+    --roundness-xxs: 8px; /* строка поиска, маленькие элементы */
 
-    /* direct messages moon icon */
-    /* change to block to show, none to hide */
-    --discord-icon: none; /* discord icon */
-    --moon-icon: block; /* moon icon */
-    --moon-icon-url: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 27 27' width='24' height='24'%3E%3Cpath fill='currentColor' d='M0 0h7v1H6v1H5v1H4v1H3v1H2v1h5v1H0V6h1V5h1V4h1V3h1V2h1V1H0m13 2h5v1h-1v1h-1v1h-1v1h3v1h-5V7h1V6h1V5h1V4h-3m8 5h1v5h1v-1h1v1h-1v1h1v-1h1v1h-1v3h-1v1h-2v1h-1v1h1v-1h2v-1h1v2h-1v1h-2v1h-1v-1h-1v1h-6v-1h-1v-1h-1v-2h1v1h2v1h3v1h1v-1h-1v-1h-3v-1h-4v-4h1v-2h1v-1h1v-1h1v2h1v1h1v-1h1v1h-1v1h2v-2h1v-2h1v-1h1M8 14h2v1H9v4h1v2h1v1h1v1h1v1h4v1h-6v-1H5v-1H4v-5h1v-1h1v-2h2m17 3h1v3h-1v1h-1v1h-1v2h-2v-2h2v-1h1v-1h1m1 0h1v3h-1v1h-2v-1h1v-1h1'%3E%3C/path%3E%3C/svg%3E"); /* custom icon url */
+    /* иконка луны для личных сообщений */
+    --discord-icon: none; /* иконка Discord */
+    --moon-icon: block; /* иконка луны */
+    --moon-icon-url: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 27 27' width='24' height='24'%3E%3Cpath fill='currentColor' d='M0 0h7v1H6v1H5v1H4v1H3v1H2v1h5v1H0V6h1V5h1V4h1V3h1V2h1V1H0m13 2h5v1h-1v1h-1v1h-1v1h3v1h-5V7h1V6h1V5h1V4h-3m8 5h1v5h1v-1h1v1h-1v1h1v-1h1v1h-1v3h-1v1h-2v1h-1v1h1v-1h2v-1h1v2h-1v1h-2v1h-1v-1h-1v1h-6v-1h-1v-1h-1v-2h1v1h2v1h3v1h1v-1h-1v-1h-3v-1h-4v-4h1v-2h1v-1h1v-1h1v2h1v1h1v-1h1v1h-1v1h2v-2h1v-2h1v-1h1M8 14h2v1H9v4h1v2h1v1h1v1h1v1h4v1h-6v-1H5v-1H4v-5h1v-1h1v-2h2m17 3h1v3h-1v1h-1v1h-1v2h-2v-2h2v-1h1v-1h1m1 0h1v3h-1v1h-2v-1h1v-1h1'%3E%3C/path%3E%3C/svg%3E"); /* кастомный URL иконки */
     --moon-icon-size: cover;
 
-    /* filter uncolorable elements to fit theme */
-    /* (just set to none, they're too much work to configure) */
-    --login-bg-filter: saturate(0.3) hue-rotate(-15deg) brightness(0.4); /* login background artwork */
-    --green-to-accent-3-filter: hue-rotate(56deg) saturate(1.43); /* add friend page explore icon */
-    --blurple-to-accent-3-filter: hue-rotate(304deg) saturate(0.84) brightness(1.2); /* add friend page school icon */
+    /* фильтрация некрасочных элементов для соответствия теме */
+    --login-bg-filter: saturate(0.3) hue-rotate(-15deg) brightness(0.4); /* фон экрана входа */
+    --green-to-accent-3-filter: hue-rotate(56deg) saturate(1.43); /* значок исследования страницы добавления друга */
+    --blurple-to-accent-3-filter: hue-rotate(304deg) saturate(0.84) brightness(1.2); /* значок школы на странице добавления друга */
 
-    /* choose style for window control buttons (minimize-maximize-close) */
-    /* block to show, none to hide; choose only one to show!*/
+    /* выберите стиль для кнопок управления окнами (свернуть-развернуть-закрыть) */
     --windows-nav: none;
     --custom-nav: block;
 }
 
-/* change fonts (edit the variables above, not this part) */
+/* измените шрифты (редактируйте переменные выше, а не эту часть) */
 :root {
     --font-primary: var(--font), 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     --font-display: var(--font), 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-/* reduced motion */
+/* уменьшение движения */
 :root.reduce-motion {
     --list-item-transition: none;
     --unread-bar-transition: none;
@@ -107,49 +103,54 @@
     --icon-spin-transition: none;
 }
 
-/* modify colors */
-#app-mount .container_ee69e0 /* channel list */,
-.privateChannels_f0963d /* dms list */,
-#app-mount .container_b2ca13 /* user panel inner */,
-.members_cbd271 /* member list inner */,
-.member_a31c43 /* member list members */,
-.searchResultsWrap_c2b47d /* search results */,
-.searchHeader_b7c924 /* search results header */,
-.chat_a7d72e.container_f3abf4 /* message requests */,
-#app-mount .panels_a4d4d9 > div /* user panel children */,
-.container_adcaac /* vc panel */,
-.sidebarRegionScroller_c25c6d /* settings left */,
-#app-mount .container_f1fd9c /* browse channels container */,
-#app-mount .header_f1fd9c /* browse channels header */,
-#app-mount .container_c2efea /* browse channels inner */,
-.chat_a7d72e.background_e85cee /* server guide body */,
-#app-mount .scrollerContainer_c6b11b /* channels and roles customize */,
-.shop_e77fa3 /* shop */,
-.wrapper_d880dc.minimum_d880dc /* private call */,
-.container_effbe2, .container__33507 /* emoji/sticker searchbars */,
-.searchBar_b56bbc /* gif picker searchbar */ ,
-#app-mount .uploadModal_f82cc7 /* upload modal */,
-.uploadModal_f82cc7 .footer_f82cc7 /* upload modal footer */,
-.container_a6d69a /* forums page */ {
+/* изменение цветов */
+#app-mount .container_ee69e0 /* список каналов */
+.privateChannels_f0963d /* список личных сообщений */
+#app-mount .container_b2ca13 /* внутренняя панель пользователя */
+.members_cbd271 /* внутренняя панель участников */
+.member_a31c43 /* участники списка */
+.searchResultsWrap_c2b47d /* результаты поиска */
+.searchHeader_b7c924 /* заголовок результатов поиска */
+.chat_a7d72e.container_f3abf4 /* запросы сообщений */
+#app-mount .panels_a4d4d9 > div /* дочерние панели пользователя */
+.container_adcaac /* панель голосовой связи */
+.sidebarRegionScroller_c25c6d /* левая панель настроек */
+#app-mount .container_f1fd9c /* контейнер для просмотра каналов */
+#app-mount .header_f1fd9c /* заголовок для просмотра каналов */
+#app-mount .container_c2efea /* внутренняя панель для просмотра каналов */
+.chat_a7d72e.background_e85cee /* основное тело серверного гида */
+#app-mount .scrollerContainer_c6b11b /* настройка каналов и ролей */
+.shop_e77fa3 /* магазин */
+.wrapper_d880dc.minimum_d880dc /* частный вызов */
+.container_effbe2, .container__33507 /* строки поиска эмодзи/стикеров */
+.searchBar_b56bbc /* строка поиска выбора GIF */
+#app-mount .uploadModal_f82cc7 /* модальное окно загрузки */
+.uploadModal_f82cc7 .footer_f82cc7 /* нижний колонтитул модального окна */
+.container_a6d69a /* страница форумов */ {
     background: var(--bg-4);
 }
-.sidebarContainer_a3a4ce, .container_a56260, .contentContainer_a56260 /* quests page */ {
+
+.sidebarContainer_a3a4ce, .container_a56260, .contentContainer_a56260 { /* страница квестов */
     background-color: var(--bg-4) !important;
 }
+
 .outer_c69a7b {
     --background-secondary-alt: var(--bg-4) !important;
 }
-.mainCard_a6d69a /* forum post */,
-.navRow_be9398[data-theme=dark] /* add new account bottom */,
-.container_ddbb27 /* forum guidelines box */,
-.searchBar_e7c031 /* settings searchbar */,
-.circleIconButton_db6521 /* server list buttons */ {
+
+.mainCard_a6d69a, /* пост на форуме */
+.navRow_be9398[data-theme=dark], /* нижняя часть новой учётной записи */
+.container_ddbb27, /* блок с правилами форума */
+.searchBar_e7c031, /* строка поиска настроек */
+.circleIconButton_db6521 { /* кнопки списка серверов */
     background: var(--bg-3);
 }
-.folderIconWrapper_bc7085[style="background-color: rgba(88, 101, 242, 0.4);"] /* default color closed folders */ {
+
+.folderIconWrapper_bc7085[style="background-color: rgba(88, 101, 242, 0.4);"] { /* закрытые папки по умолчанию */
     background: var(--bg-3) !important;
 }
-/* Radial status */
+
+/* Радиальный Статус */
 #app-mount .wrapper_c51b4e {
 border-radius: var(--rs-avatar-shape);
 }
