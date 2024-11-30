@@ -103,9 +103,33 @@
     --moon-spin-transition: none;
     --icon-spin-transition: none;
 }
-.sidebar_c25c6d { /* отдельная настройка цвета для списка в настройках. */
+/* настройки меню настроек xD */
+.sidebar_c25c6d {
+    position: relative;
     background: var(--bg-5);
-    border-radius: var(--roundness-xl); 
+    border-radius: 8px;
+    overflow: hidden;
+}
+.sidebar_c25c6d::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 14px;
+    height: 100%;
+    background: var(--bg-1);
+}
+.sidebar_c25c6d::after {
+    content: var(--corner-text);
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    font-family: var(--font);
+    transform: translateX(-50%);
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--text-5);
+    z-index: 1;
 }
 #app-mount .container_ee69e0 /* список каналов */,
 .privateChannels_f0963d /* список личных сообщений */,
@@ -148,7 +172,6 @@
 .folderIconWrapper_bc7085[style="background-color: rgba(88, 101, 242, 0.4);"] { /* закрытые папки по умолчанию */
     background: var(--bg-3) !important;
 }
-
 /* Радиальный Статус */
 #app-mount .wrapper_c51b4e {
 border-radius: var(--rs-avatar-shape);
