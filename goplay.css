@@ -116,7 +116,7 @@
 .sidebar_c25c6d {
     position: relative;
     background: var(--bg-5);
-    border-radius: 8px;
+    border-radius: var(--roundness-xl);
     overflow: hidden;
 }
 #app-mount .container_ee69e0 /* список каналов */,
