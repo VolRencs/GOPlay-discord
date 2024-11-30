@@ -104,12 +104,6 @@
     --icon-spin-transition: none;
 }
 /* цвета слайд-бара меню настроек */
-.sidebar_c25c6d {
-    position: relative;
-    background: var(--bg-5);
-    border-radius: 8px;
-    overflow: hidden;
-}
 .sidebar_c25c6d::before {
     content: "";
     position: absolute;
@@ -118,6 +112,12 @@
     width: 14px;
     height: 100%;
     background: var(--bg-1);
+}
+.sidebar_c25c6d {
+    position: relative;
+    background: var(--bg-5);
+    border-radius: 8px;
+    overflow: hidden;
 }
 #app-mount .container_ee69e0 /* список каналов */,
 .privateChannels_f0963d /* список личных сообщений */,
