@@ -103,7 +103,7 @@
     --moon-spin-transition: none;
     --icon-spin-transition: none;
 }
-/* настройки меню настроек xD */
+/* цвета слайд-бара меню настроек */
 .sidebar_c25c6d {
     position: relative;
     background: var(--bg-5);
@@ -118,18 +118,6 @@
     width: 14px;
     height: 100%;
     background: var(--bg-1);
-}
-.sidebar_c25c6d::after {
-    content: var(--corner-text);
-    position: absolute;
-    top: 8px;
-    left: 50%;
-    font-family: var(--font);
-    transform: translateX(-50%);
-    font-size: 18px;
-    font-weight: bold;
-    color: var(--text-5);
-    z-index: 1;
 }
 #app-mount .container_ee69e0 /* список каналов */,
 .privateChannels_f0963d /* список личных сообщений */,
