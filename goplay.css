@@ -128,6 +128,9 @@
     height: 6px; /* Толщина линии */
     background: var(--accent-2);
 }
+.side_a0 {
+    margin-left: -13px;
+}
 #app-mount .container_ee69e0 /* список каналов */,
 .privateChannels_f0963d /* список личных сообщений */,
 #app-mount .container_b2ca13 /* внутренняя панель пользователя */,
