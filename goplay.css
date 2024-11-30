@@ -103,21 +103,30 @@
     --moon-spin-transition: none;
     --icon-spin-transition: none;
 }
-/* цвета слайд-бара меню настроек */
-.sidebar_c25c6d::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 14px;
-    height: 100%;
-    background: var(--bg-1);
-}
+/* цвета слайд-баров меню настроек */
 .sidebar_c25c6d {
     position: relative;
     background: var(--bg-5);
     border-radius: var(--roundness-xl);
     overflow: hidden;
+}
+.sidebar_c25c6d::before {
+    content: "";
+    position: absolute;
+    top: 0; /* Полоса сверху */
+    left: 0;
+    width: 100%;
+    height: 6px; /* Толщина линии */
+    background: var(--accent-2);
+}
+.sidebar_c25c6d::after {
+    content: "";
+    position: absolute;
+    bottom: 0; /* Полоса снизу */
+    left: 0;
+    width: 100%;
+    height: 6px; /* Толщина линии */
+    background: var(--accent-2);
 }
 #app-mount .container_ee69e0 /* список каналов */,
 .privateChannels_f0963d /* список личных сообщений */,
