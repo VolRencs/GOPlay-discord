@@ -106,7 +106,7 @@
 /* цвета слайд-баров меню настроек */
 .sidebar_c25c6d {
     position: relative;
-    background: linear-gradient(to top, #20262639 70%, #31313a 85%, transparent 100%);
+    background: linear-gradient(to top, var(--bg-5) 70%, var(--bg-4) 85%, transparent 100%);
     overflow: hidden;
     border-bottom-left-radius: var(--roundness-xl);
     border-bottom-right-radius: var(--roundness-xl);
