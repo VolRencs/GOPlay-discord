@@ -4,10 +4,10 @@ stages:
 pages:
   stage: deploy
   script:
-    - mkdir public  # Создаём директорию public, если её нет
-    - find . -maxdepth 1 ! -name 'public' -exec cp -r {} public/ \;  # Копируем все файлы, кроме папки public
+    - mkdir public
+    - cp -r * public/
   artifacts:
     paths:
-      - public  # Указываем, что для деплоя нужно использовать директорию public
+      - public
   only:
-    - Main  # или другая ветка для деплоя
+    - main
