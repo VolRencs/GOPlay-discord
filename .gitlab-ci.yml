@@ -1,13 +1,4 @@
-stages:
-  - deploy
-
-pages:
-  stage: deploy
-  script:
-    - mkdir .public
-    - cp -r * .public/
-  artifacts:
-    paths:
-      - .public
-  only:
-    - main
+# The Docker image that will be used to build your app
+image: node:16
+# Functions that should be executed before the build script is run
+before_script: []
