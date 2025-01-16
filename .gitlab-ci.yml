@@ -1,4 +1,21 @@
-# The Docker image that will be used to build your app
 image: node:16
-# Functions that should be executed before the build script is run
-before_script: []
+
+stages:
+  - build
+  - deploy
+
+build:
+  stage: build
+  script:
+    - npm install       # Установить зависимости
+    - npm run build     # Собрать сайт
+  artifacts:
+    paths:
+      - public/         # Публикуем папку 'public'
+
+deploy:
+  stage: deploy
+  script:
+    - cp -r public/* /usr/share/nginx/html/  # Переносим файлы на Pages
+  only:
+    - main
