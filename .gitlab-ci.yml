@@ -4,10 +4,11 @@ stages:
 pages:
   stage: deploy
   script:
-    - cp -r * .public/  # Копирует все файлы и папки в директорию .public
+    - mkdir .public  # Создаём директорию .public, если её нет
+    - cp -r * .public/  # Копируем все файлы в .public
   artifacts:
     paths:
-      - .public  # Все файлы, которые вы хотите развернуть, должны быть в .public
+      - .public  # Указываем GitLab, что нужно деплоить файлы из .public
   only:
-    - Main  # или другая ветка, которую вы используете для деплоя
+    - master  # или другая ветка, если используете её для деплоя
     
