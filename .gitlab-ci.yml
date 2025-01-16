@@ -1,21 +1,10 @@
-image: node:16
+image: nginx:alpine  # Используем образ с Nginx для статического контента
 
-stages:
-  - build
-  - deploy
-
-build:
-  stage: build
+pages:
   script:
-    - npm install       # Установить зависимости
-    - npm run build     # Собрать сайт
+    - cp -r * public/  # Копируем все файлы в папку public, которая требуется для GitLab Pages
   artifacts:
     paths:
-      - public/         # Публикуем папку 'public'
-
-deploy:
-  stage: deploy
-  script:
-    - cp -r public/* /usr/share/nginx/html/  # Переносим файлы на Pages
+      - public  # Указываем, что хотим деплоить папку public
   only:
-    - main
+    - main  # Деплоим только для ветки main
