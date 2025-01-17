@@ -166,58 +166,58 @@ contain: none;
 mask: none;
 }
 #app-mount .wrapper_c51b4e .dots_ce0450 circle {
-cy: -8 !important;
+    cy: -8 !important;
 }
 #app-mount .wrapper_c51b4e .dots_ce0450 circle:nth-child(1) {
-cx: -8.5 !important;
+    cx: -8.5 !important;
 }
 #app-mount .wrapper_c51b4e .dots_ce0450 circle:nth-child(2) {
-cx: -2.25 !important;
+    cx: -2.25 !important;
 }
 #app-mount .wrapper_c51b4e .dots_ce0450 circle:nth-child(3) {
-cx: 4 !important;
+    cx: 4 !important;
 }
 #app-mount .wrapper_c51b4e .mask_c51b4e > rect[x="22"] {
-x: 0;
-y: 0;
+    x: 0;
+    y: 0;
 }
 #app-mount .wrapper_c51b4e .mask_c51b4e > circle {
-opacity: 0 !important;
-width: 100%;
-height: 100%;
-cx: 43%;
-cy: 20;
+    opacity: 0 !important;
+    width: 100%;
+    height: 100%;
+    cx: 43%;
+    cy: 20;
 }
 #app-mount .wrapper_c51b4e .pointerEvents_c51b4e[x="14.5"] {
-fill: rgba(0, 0, 0, 0.5) !important;
-width: 30px;
-height: 30px;
-x: 1;
-y: 1;
+    fill: rgba(0, 0, 0, 0.5) !important;
+    width: 30px;
+    height: 30px;
+    x: 1;
+    y: 1;
 }
-#app-mount .wrapper_c51b4e img, #app-mount .wrapper_c51b4e.avatar_d808b0 {
-border-radius: var(--rs-avatar-shape);
+#app-mount .wrapper_c51b4e img, #app-mount .wrapper_c51b4e .avatar_d808b0 {
+    border-radius: var(--rs-avatar-shape);
 }
 #app-mount .wrapper_c51b4e svg[width="25"][height="15"] > rect {
-rx: calc(var(--rs-avatar-shape) * 2) !important;
-ry: calc(var(--rs-avatar-shape) * 2) !important;
+    rx: calc(var(--rs-avatar-shape) * 2) !important;
+    ry: calc(var(--rs-avatar-shape) * 2) !important;
 }
 #app-mount .wrapper_c51b4e[style*="80px"] svg.cursorDefault_c51b4e rect, #app-mount .wrapper_c51b4e[style*="120px"] svg.cursorDefault_c51b4e rect {
-ry: calc(var(--rs-avatar-shape) * 3.3);
-rx: calc(var(--rs-avatar-shape) * 3.3);
+    ry: calc(var(--rs-avatar-shape) * 3.3);
+    rx: calc(var(--rs-avatar-shape) * 3.3);
 }
 #app-mount .wrapper_c51b4e rect {
-x: 0;
-y: 0;
-width: 100%;
-height: 100%;
--webkit-mask: none;
-mask: none;
-display: block;
-rx: var(--rs-avatar-shape);
-ry: var(--rs-avatar-shape);
-fill: transparent !important;
-stroke-width: var(--rs-small-width);
+    x: 0;
+    y: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-mask: none;
+    mask: none;
+    display: block;
+    rx: var(--rs-avatar-shape);
+    ry: var(--rs-avatar-shape);
+    fill: transparent !important;
+    stroke-width: var(--rs-small-width);
 }
 #app-mount .wrapper_c51b4e rect[fill="#43b581"], #app-mount .wrapper_c51b4e rect[fill="#3ba55c"], #app-mount .wrapper_c51b4e rect[fill="rgba(67, 181, 129, 1)"], #app-mount .wrapper_c51b4e rect[mask*=online], #app-mount .wrapper_c51b4e rect[fill*="hsl(139"], #app-mount .wrapper_c51b4e rect[fill*="var(--status-green"], #app-mount .wrapper_c51b4e rect[fill="#23a55a"] {
 stroke: var(--rs-online-color);
