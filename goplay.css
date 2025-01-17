@@ -89,13 +89,11 @@
     --windows-nav: none;
     --custom-nav: block;
 }
-
 /* измените шрифты (редактируйте переменные выше, а не эту часть) */
 :root {
     --font-primary: var(--font), 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     --font-display: var(--font), 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-
 /* уменьшение движения */
 :root.reduce-motion {
     --list-item-transition: none;
