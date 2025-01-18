@@ -219,8 +219,9 @@ mask: none;
     fill: transparent !important;
     stroke-width: var(--rs-small-width);
 }
-#app-mount .dots_e85446 .dots_ce0450{
-stroke: var(--rs-online-color)
+/* Изменение цвета элемента с определенными встроенными стилями */
+div[style*="display: flex; justify-content: center; align-items: center; border-radius: 5px; background-color: rgb(35, 165, 90); height: 10px; width: 25px;"] {
+    background-color: var(--online-indicator) !important; /* Новый цвет элемента */
 }
 #app-mount .wrapper_c51b4e rect[fill="#43b581"], #app-mount .wrapper_c51b4e rect[fill="#3ba55c"], #app-mount .wrapper_c51b4e rect[fill="rgba(67, 181, 129, 1)"], #app-mount .wrapper_c51b4e rect[mask*=online], #app-mount .wrapper_c51b4e rect[fill*="hsl(139"], #app-mount .wrapper_c51b4e rect[fill*="var(--status-green"], #app-mount .wrapper_c51b4e rect[fill="#23a55a"] {
 stroke: var(--rs-online-color);
