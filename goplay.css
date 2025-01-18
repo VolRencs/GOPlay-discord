@@ -219,6 +219,9 @@ mask: none;
     fill: transparent !important;
     stroke-width: var(--rs-small-width);
 }
+#app-mount .dots_e85446 .dots_ce0450{
+stroke: var(--rs-online-color)
+}
 #app-mount .wrapper_c51b4e rect[fill="#43b581"], #app-mount .wrapper_c51b4e rect[fill="#3ba55c"], #app-mount .wrapper_c51b4e rect[fill="rgba(67, 181, 129, 1)"], #app-mount .wrapper_c51b4e rect[mask*=online], #app-mount .wrapper_c51b4e rect[fill*="hsl(139"], #app-mount .wrapper_c51b4e rect[fill*="var(--status-green"], #app-mount .wrapper_c51b4e rect[fill="#23a55a"] {
 stroke: var(--rs-online-color);
 }
