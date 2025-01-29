@@ -122,7 +122,7 @@
 .chat_a7d72e.container_f3abf4 /* запросы сообщений */,
 #app-mount .panels_a4d4d9 > div /* дочерние панели пользователя */,
 .container_adcaac /* панель голосовой связи */,
-.sidebarRegionScroller_c25c6d /* левая панель настроек */,
+.sidebarRegionScroller__23e6b /* левая панель настроек */,
 #app-mount .container_f1fd9c /* контейнер для просмотра каналов */,
 #app-mount .header_f1fd9c /* заголовок для просмотра каналов */,
 #app-mount .container_c2efea /* внутренняя панель для просмотра каналов */,
@@ -1193,7 +1193,7 @@ button.button_f67531 /* make user panel buttons round */ {
 }
 
 /* fix discovery icon */
-.footer_d71945 {
+.footer__214dc {
     background: var(--bg-overlay-app-frame, var(--bg-4));
 }
 .fixedDiscoveryIcon_fea3ef {
