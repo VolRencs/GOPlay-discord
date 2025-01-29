@@ -102,7 +102,7 @@
     --icon-spin-transition: none;
 }
 /* цвета слайд-баров меню настроек */
-.sidebar__23e6b {
+.sidebar_c25c6d {
     position: relative;
     background: linear-gradient(to top, var(--bg-5) 70%, var(--bg-4) 85%, transparent 100%);
     overflow: hidden;
@@ -112,8 +112,8 @@
 .side_a0 {
     margin-left: -13px;
 }
-#app-mount .itemsContainer_ef3116 /* список каналов */,
-.content__99f8c /* список личных сообщений */,
+#app-mount .container_ee69e0 /* список каналов */,
+.privateChannels_f0963d /* список личных сообщений */,
 #app-mount .container_b2ca13 /* внутренняя панель пользователя */,
 .members_cbd271 /* внутренняя панель участников */,
 .member_a31c43 /* участники списка */,
@@ -122,13 +122,13 @@
 .chat_a7d72e.container_f3abf4 /* запросы сообщений */,
 #app-mount .panels_a4d4d9 > div /* дочерние панели пользователя */,
 .container_adcaac /* панель голосовой связи */,
-.sidebarRegionScroller__23e6b /* левая панель настроек */,
+.sidebarRegionScroller_c25c6d /* левая панель настроек */,
 #app-mount .container_f1fd9c /* контейнер для просмотра каналов */,
 #app-mount .header_f1fd9c /* заголовок для просмотра каналов */,
 #app-mount .container_c2efea /* внутренняя панель для просмотра каналов */,
 .chat_a7d72e.background_e85cee /* основное тело серверного гида */,
 #app-mount .scrollerContainer_c6b11b /* настройка каналов и ролей */,
-.link__972a0 /* магазин */,
+.shop_e77fa3 /* магазин */,
 .wrapper_d880dc.minimum_d880dc /* частный вызов */,
 .container_effbe2, .container__33507 /* строки поиска эмодзи/стикеров */,
 .searchBar_b56bbc /* строка поиска выбора GIF */,
@@ -843,7 +843,7 @@ button.button_dd4f85 /* small buttons */,
 #vc-spotify-album-image,
 .background_ae3c77 /* settings nitro tab selected */,
 .hoverButtonGroup_e5c1dc /* video download button */,
-.wrapper_ef3116 /* message hover menu */,
+.wrapper_ef319f /* message hover menu */,
 .previewChannelRowContent_c5d9bc {
     border-radius: var(--roundness-xs);
 }
@@ -852,7 +852,7 @@ button.button_dd4f85 /* small buttons */,
     right: 6px;
 }
 .wrapper_a7c28c /* mentions */,
-.searchBar__35e86 /* channel search bar */,
+.searchBar_a46bef /* channel search bar */,
 .searchBar_f0963d .searchBarComponent_f0963d /* small 'find conversation' search bar */,
 .topPill_a0 .item_a0 /* friend online/categories */ {
     border-radius: var(--roundness-xxs);
@@ -1193,7 +1193,7 @@ button.button_f67531 /* make user panel buttons round */ {
 }
 
 /* fix discovery icon */
-.footer__214dc {
+.footer_d71945 {
     background: var(--bg-overlay-app-frame, var(--bg-4));
 }
 .fixedDiscoveryIcon_fea3ef {
