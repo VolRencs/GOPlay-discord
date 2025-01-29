@@ -102,7 +102,7 @@
     --icon-spin-transition: none;
 }
 /* цвета слайд-баров меню настроек */
-.sidebar__23e6b {
+.sidebar_new {
     position: relative;
     background: linear-gradient(to top, var(--bg-5) 70%, var(--bg-4) 85%, transparent 100%);
     overflow: hidden;
@@ -112,10 +112,10 @@
 .side_a0 {
     margin-left: -13px;
 }
-#app-mount .container_ee69e0 /* список каналов */,
-.privateChannels_f0963d /* список личных сообщений */,
-#app-mount .container_b2ca13 /* внутренняя панель пользователя */,
-.members_cbd271 /* внутренняя панель участников */,
+#app-mount .container_updated /* список каналов */,
+.privateChannels_new /* список личных сообщений */,
+#app-mount .container_userPanel /* внутренняя панель пользователя */,
+.members_list /* внутренняя панель участников */,
 .member_a31c43 /* участники списка */,
 .searchResultsWrap_c2b47d /* результаты поиска */,
 .searchHeader_b7c924 /* заголовок результатов поиска */,
@@ -402,7 +402,7 @@ background: var(--bg-1);
 }
 .chat_a7d72e /* chat + member list */,
 .sidebar_a4d4d9 /* channel sidebar */,
-.privateChannels_f0963d .scroller_c47fa9 /* dms list inner */,
+.privateChannels_new .scroller_c47fa9 /* dms list inner */,
 #app-mount .innerHeader_f1fd9c:after /* channels and roles header shadow */,
 .attachedBars_d0696b /* reply bar underneath */ {
     background: none;
@@ -425,7 +425,7 @@ div.message_d5deea.replying_d5deea::before /* change reply message bar to neutra
 .activeButtonChild_a06035 /* send button */ {
     color: var(--accent-2);
 }
-.container_b2ca13 /* user panel button strikethroughs */,
+.container_userPanel /* user panel button strikethroughs */,
 .numberBadge_df8943  /* unread number badge */,
 .toolbar_fc4f04 /* toolbar button strikethroughs */ {
     --status-danger: var(--accent-2);
@@ -725,9 +725,9 @@ a[href="https://support.discord.com"] /* hide help */
 }
 
 /* add rounded corners */
-.container_ee69e0 /* channel list */,
+.container_updated /* channel list */,
 .panels_a4d4d9 /* user panels */,
-.privateChannels_f0963d /* dms list */,
+.privateChannels_new /* dms list */,
 .container_c2739c /* friends page */,
 .applicationStore_cecc86 /* nitro page */,
 #app-mount .container_f3abf4 /* message requests */,
@@ -884,8 +884,8 @@ padding: 12px 0;
 }
 
 /* fix member list rounded corners */
-.members_cbd271.thin_c49869,
-.members_cbd271.thin_eed6a8 {
+.members_list.thin_c49869,
+.members_list.thin_eed6a8 {
     border-radius: 0 0 var(--roundness-xl) var(--roundness-xl);
 }
 
