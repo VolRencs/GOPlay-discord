@@ -102,7 +102,7 @@
     --icon-spin-transition: none;
 }
 /* цвета слайд-баров меню настроек */
-.sidebar_c25c6d {
+.sidebar__23e6b {
     position: relative;
     background: linear-gradient(to top, var(--bg-5) 70%, var(--bg-4) 85%, transparent 100%);
     overflow: hidden;
@@ -843,7 +843,7 @@ button.button_dd4f85 /* small buttons */,
 #vc-spotify-album-image,
 .background_ae3c77 /* settings nitro tab selected */,
 .hoverButtonGroup_e5c1dc /* video download button */,
-.wrapper_ef319f /* message hover menu */,
+.wrapper_ef3116 /* message hover menu */,
 .previewChannelRowContent_c5d9bc {
     border-radius: var(--roundness-xs);
 }
@@ -852,7 +852,7 @@ button.button_dd4f85 /* small buttons */,
     right: 6px;
 }
 .wrapper_a7c28c /* mentions */,
-.searchBar_a46bef /* channel search bar */,
+.searchBar__35e86 /* channel search bar */,
 .searchBar_f0963d .searchBarComponent_f0963d /* small 'find conversation' search bar */,
 .topPill_a0 .item_a0 /* friend online/categories */ {
     border-radius: var(--roundness-xxs);
