@@ -419,7 +419,7 @@ background: var(--bg-1);
 div.message_d5deea.replying_d5deea::before /* change reply message bar to neutral */ {
     background: var(--text-2);
 }
-.headerContainer_e5a9ed, .itemContainer_e5a9ed { /* Не нужная информация про активности */
+.headerContainer__675e5, .itemContainer__675e5 { /* Не нужная информация про активности */
 	display: none;
 }
 .activeButtonChild_a06035 /* send button */ {
