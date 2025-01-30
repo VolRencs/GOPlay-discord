@@ -25,6 +25,7 @@
     --text-3: #dbfdff; /* нормальный текст */
     --text-4: #e6ededd5; /* иконки кнопок и каналы */
     --text-5: #d4be9866; /* беззвучные каналы/чаты и метки времени */
+    --text-6: #5f616b; /* другой обычный текст */
 
     --online-indicator: #3e92ff; /* цвет индикатора онлайн */
     --dnd-indicator: #ff0000; /* цвет индикатора не беспокоить */
@@ -1492,7 +1493,7 @@ html.theme-light,
     --user-profile-header-overflow-background: hsl(var(--primary-700-hsl) / 0.5);
     --voice-video-tile-blur-fallback: hsl(var(--primary-700-hsl) / 0.48);
     --voice-video-video-tile-blur-fallback: hsl(var(--primary-700-hsl) / 0.48);
-    --white: var(--white-500);
+    --white: var(--text-6);
 
     --profile-gradient-primary-color: var(--bg-4);
     --profile-gradient-secondary-color: var(--bg-4);
