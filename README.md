@@ -1,8 +1,6 @@
 <div align="center">
 
-# <span style="color: red;">**At this point, the topic is broken. Since the latest Discord update broke all themes.**</span>
-
-## GOPlay theme for Discord based on [Midnight](https://github.com/refact0r/midnight-discord)
+# GOPlay theme for Discord based on [Midnight](https://github.com/refact0r/midnight-discord)
 
 <span style="color: gray;">***Beautiful theme with blue hues, radial statuses and lightness.***</span>
 ![](https://gitlab.com/wwn.games/GOPlay-discord/-/raw/Main/Image.png)
