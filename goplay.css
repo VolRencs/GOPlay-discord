@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap');
 
 /* Настройка основных параметров */
 :root {
-    /* шрифт, измените на 'gg sans' для шрифта по умолчанию Discord */
-    --font: 'roboto';
+    /* шрифт */
+    --font: 'Rubik';
 
     /* текст в верхнем левом углу */
     --corner-text: 'GOPlay';
@@ -1527,4 +1527,10 @@ html.theme-light,
     --primary-660: var(--bg-3); /* search popout "enter" bar */
 
     --white-500: var(--text-1);
+}
+[class*='scroll'] {
+	will-change: scroll-position;
+}
+.burstGlow__23977 {
+	display: none;
 }
