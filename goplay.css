@@ -150,8 +150,8 @@
 .navRow__86e92[data-theme=dark], /* нижняя часть новой учётной записи */
 .container_ca49a1, /* блок с правилами форума */
 .searchBar_c7e907, /* строка поиска настроек */
-.searchBar__5ec2f /* строка поиска друзей */,
-.circleIconButton__5bc7e  /* кнопки списка серверов */
+.searchBar__5ec2f, /* строка поиска друзей */
+.circleIconButton__5bc7e,  /* кнопки списка серверов */
 .auditLog__43dab { /* контейнер лога аудита */
     background: var(--bg-3);
 }
