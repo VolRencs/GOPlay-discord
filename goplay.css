@@ -77,9 +77,8 @@
 
     /* иконка луны для личных сообщений */
     --discord-icon: none; /* иконка Discord */
-    --moon-icon: block; /* иконка луны */
-    --moon-icon-url: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 27 27' width='24' height='24'%3E%3Cpath fill='currentColor' d='M0 0h7v1H6v1H5v1H4v1H3v1H2v1h5v1H0V6h1V5h1V4h1V3h1V2h1V1H0m13 2h5v1h-1v1h-1v1h-1v1h3v1h-5V7h1V6h1V5h1V4h-3m8 5h1v5h1v-1h1v1h-1v1h1v-1h1v1h-1v3h-1v1h-2v1h-1v1h1v-1h2v-1h1v2h-1v1h-2v1h-1v-1h-1v1h-6v-1h-1v-1h-1v-2h1v1h2v1h3v1h1v-1h-1v-1h-3v-1h-4v-4h1v-2h1v-1h1v-1h1v2h1v1h1v-1h1v1h-1v1h2v-2h1v-2h1v-1h1M8 14h2v1H9v4h1v2h1v1h1v1h1v1h4v1h-6v-1H5v-1H4v-5h1v-1h1v-2h2m17 3h1v3h-1v1h-1v1h-1v2h-2v-2h2v-1h1v-1h1m1 0h1v3h-1v1h-2v-1h1v-1h1'%3E%3C/path%3E%3C/svg%3E"); /* кастомный URL иконки */
-    --moon-icon-size: cover;
+    --goplay-icon-url: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 27 27' width='24' height='24'%3E%3Cpath fill='currentColor' d='M0 0h7v1H6v1H5v1H4v1H3v1H2v1h5v1H0V6h1V5h1V4h1V3h1V2h1V1H0m13 2h5v1h-1v1h-1v1h-1v1h3v1h-5V7h1V6h1V5h1V4h-3m8 5h1v5h1v-1h1v1h-1v1h1v-1h1v1h-1v3h-1v1h-2v1h-1v1h1v-1h2v-1h1v2h-1v1h-2v1h-1v-1h-1v1h-6v-1h-1v-1h-1v-2h1v1h2v1h3v1h1v-1h-1v-1h-3v-1h-4v-4h1v-2h1v-1h1v-1h1v2h1v1h1v-1h1v1h-1v1h2v-2h1v-2h1v-1h1M8 14h2v1H9v4h1v2h1v1h1v1h1v1h4v1h-6v-1H5v-1H4v-5h1v-1h1v-2h2m17 3h1v3h-1v1h-1v1h-1v2h-2v-2h2v-1h1v-1h1m1 0h1v3h-1v1h-2v-1h1v-1h1'%3E%3C/path%3E%3C/svg%3E"); /* кастомный URL иконки */
+    --goplay-icon-size: cover;
 
     /* фильтрация некрасочных элементов для соответствия теме */
     --login-bg-filter: saturate(0.3) hue-rotate(-15deg) brightness(0.4); /* фон экрана входа */
@@ -746,7 +745,6 @@ a[href="https://support.discord.com"] /* hide help */
 .wrapper_cb9592.minimum_cb9592, /* private call */
 .wrapper_cb9592.minimum_cb9592 ~ .content_f75fb0 /* chat under private call */,
 .main_c08b38 /* server onboarding */,
-/* discover page sidebar & wrappers */
 .container__551b0 /* discover page sidebar */,
 .scroller__23746 /* discover page container */,
 .layerContainer_da8173 .outer_c0bea0 /* profile popout */ {
@@ -1028,14 +1026,13 @@ padding: 12px 0;
 }
 .childWrapper__6e9f8:has(> svg:not(.favoriteIcon_c9fddf))::before {
     content: '';
-    display: var(--moon-icon);
     position: absolute;
     width: 65%;
     height: 65%;
     background: var(--text-4);
-    mask-image: var(--moon-icon-url);
-    mask-size: var(--moon-icon-size);
-    mask-repeat: none;
+    mask-image: var(--goplay-icon-url);
+    mask-size: var(--goplay-icon-size);
+    mask-repeat: no-repeat;
 }
 .wrapper__6e9f8:hover .childWrapper__6e9f8::before {
     /* prettier-ignore */
