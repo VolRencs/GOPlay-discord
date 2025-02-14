@@ -64,7 +64,6 @@
     /* анимации */
     --list-item-transition: 0.2s ease; /* анимация наведения на каналы/участников/настройки */
     --unread-bar-transition: 0.2s ease; /* анимация появления полосы непрочитанных сообщений */
-    --moon-spin-transition: 0.4s ease; /* анимация вращения иконки луны */
     --icon-spin-transition: 1s ease; /* анимация вращения круглой иконки кнопок (настройки, эмодзи и т.д.) */
 
     /* скругление углов (border-radius) */
@@ -98,7 +97,6 @@
 :root.reduce-motion {
     --list-item-transition: none;
     --unread-bar-transition: none;
-    --moon-spin-transition: none;
     --icon-spin-transition: none;
 }
 /* цвета слайд-баров меню настроек */
@@ -1019,8 +1017,6 @@ padding: 12px 0;
 [class^='winButton']:active::after {
     transform: scale(0.9); /* Сжатие при клике */
 }
-
-/* custom dm button moon icon */
 .childWrapper__6e9f8 > svg:not(.favoriteIcon_c9fddf) {
     display: var(--discord-icon);
 }
@@ -1033,11 +1029,6 @@ padding: 12px 0;
     mask-image: var(--goplay-icon-url);
     mask-size: var(--goplay-icon-size);
     mask-repeat: no-repeat;
-}
-.wrapper__6e9f8:hover .childWrapper__6e9f8::before {
-    /* prettier-ignore */
-    transition: background-color 0.15s ease-out, transform var(--moon-spin-transition);
-    transform: rotate(0deg) scale(1);
 }
 .wrapper__6e9f8:hover > .childWrapper__6e9f8::before,
 .wrapper__6e9f8.selected__6e9f8 > .childWrapper__6e9f8::before {

@@ -2,7 +2,7 @@
  * @name GOPlay
  * @description Discord theme GOPlay
  * @author VolRen
- * @version 1.3.0
+ * @version 1.3.1
  * @invite 5CpUtAEhdD
  * @website https://github.com/VolRen-ShYK/GOPlay-discord
  * @source https://github.com/VolRen-ShYK/GOPlay-discord/blob/Main/GOPlay.theme.css
@@ -82,10 +82,8 @@
     --roundness-xs: 10px; /* каналы, кнопки */
     --roundness-xxs: 8px; /* строка поиска, маленькие элементы */
 
-    /* иконка луны для личных сообщений */
     --discord-icon: none; /* иконка Discord */
-    --moon-icon: block; /* иконка луны */
-    --moon-icon-size: cover;
+    --goplay-icon-size: cover;
 
     /* фильтрация некрасочных элементов для соответствия теме */
     --login-bg-filter: saturate(0.3) hue-rotate(-15deg) brightness(0.4); /* фон экрана входа */
